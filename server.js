@@ -1,9 +1,13 @@
 
+const cors = require("cors");
 
 const express = require("express");
 const mongoose = require("mongoose");
 
 const app = express();
+
+app.use(cors());
+
 const PORT = 3000;
 
 // disable buffering (important)
